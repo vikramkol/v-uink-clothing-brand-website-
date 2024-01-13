@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="V Unik Logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V unik login and registration
+
+  </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href= "login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+ 
+</head>
+<body>
+  <header class="header">
+    <div class="logo">V unik</div>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a class="nav-links" href="home.html">Home</a></li>
+            <li><a class="nav-links" href="shope.html">Shope</a></li>
+            <li><a class="nav-links" href="aboutus.html">About</a></li>
+            <li><a class="nav-links" href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="icon">
+        <a class="nav-links  active" href="login.html"><i class="fa-solid fa-user"></i></a>
+        <a class="nav-links" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a class="menu-btn nav-links" href="#"><i class="fa-solid fa-bars menu-btn"></i></a>
+    </div>
+</header>
+     
+
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form action="#">
+        <input type="text" placeholder="Enter your email">
+        <input type="password" placeholder="Enter your password">
+        <!-- <a href="#">Forgot password?</a> -->
+        <input type="button" class="button" value="Login">
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+         <label for="check">Signup</label>
+        </span>
+      </div>
+    </div>
+    <div class="registration form">
+      <header>Signup</header>
+      <form action="#">
+        <input type="text" placeholder="Enter your email">
+        <input type="password" placeholder="Create a password">
+        <input type="password" placeholder="Confirm your password">
+        <input type="button" class="button" value="Signup">
+      </form>
+      <div class="signup">
+        <span class="signup">Already have an account?
+         <label for="check">Login</label>
+        </span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

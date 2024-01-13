@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V unik product detail</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">V unik</div>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a class="nav-links" href="home.html">Home</a></li>
+            <li><a class="nav-links" href="shope.html">Shope</a></li>
+            <li><a class="nav-links" href="aboutus.html">About</a></li>
+            <li><a class="nav-links" href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="icon">
+        <a class="nav-links" href="login.html"><i class="fa-solid fa-user"></i></a>
+        <a class="nav-links" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a class="menu-btn nav-links" href="#"><i class="fa-solid fa-bars menu-btn"></i></a>
+    </div>
+</header>
+
+  <section class="main-section">
+    <div class="small-img">
+      <div class="product-small-img">
+        <div class="small-img">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO0AAADVCAMAAACMuod9AAAAVFBMVEXu7u5mZmbz8/NZWVlcXFy8vLzU1NSXl5eioqKysrL19fV/f3/x8fFjY2NeXl7Nzc3j4+NqamrKysqMjIx3d3eGhobp6ene3t5TU1Nubm6wsLCPj49E04CSAAACxUlEQVR4nO3b63KiQBRFYWwIJoSbYnQyef/3HPCCIt1OMraTOjtr/VSk+vMolypNkh+U++4F/NfQ6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY3tLqh1Q2tbmh1Q6sbWt3Q6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDq9sDtKWLVfSlxd9j2TzFqo29tge8f89plsao/pWXsdcWeX+Dtn5dxug9M6FNX4oYvaZGtDH2ivbe0N65R7T/ENp7+25tf5kZIOlpS5e//F4nXpScttxt0rrOVo1vezVt2dbVoq9KGw9LTVu87bE9d+F5gZq2zRbHsvXcJaYtm1Fbe16hps1/kjbZjlqfy7bWtdePFsv6eJTaFPPtTWtdk65nD7/vuVW1EzsD9dgqW1+NsEyWWZalb61PZVjr9sff+XSLbdO0/itlu9p+ssfz6uwLWoZEZrVuPLN6vruhrGrPWO90x6bHKqPaS2zP9d7wDJt11eRoZVM7xQan67r+huiSa1J7jQ1Mt8cO90IXXIvaOXbgzqa7x065BrU+rGe6RXe6hjxz7Wn92BnXnbA9d3XimtOGsFfc4oy9mK41rWvqAHbCdd1ks9N0jWnDk51wi+7qPTlybWlvTfaC6z5mmx24prS3JztyZ5MduZa0Lr892QO38Ez2xDWkdfnfJnvg+rF7rh1t8YnJDtVV6JlqlVjRPn1qsrerNhsb2vojOLKvcBc2fkEU/nx+LSPaOFi0964t8v7QokVrU5tmcbLw++Rkl8dqG3tpj/gXRRmr6CvjPyO6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY3tLqh1Q2tbmh1Q6sbWt3Q6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY39wcAlyz4wLPLJwAAAABJRU5ErkJggg==" >
+      </div>
+
+      <div class="small-img">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO0AAADVCAMAAACMuod9AAAAVFBMVEXu7u5mZmbz8/NZWVlcXFy8vLzU1NSXl5eioqKysrL19fV/f3/x8fFjY2NeXl7Nzc3j4+NqamrKysqMjIx3d3eGhobp6ene3t5TU1Nubm6wsLCPj49E04CSAAACxUlEQVR4nO3b63KiQBRFYWwIJoSbYnQyef/3HPCCIt1OMraTOjtr/VSk+vMolypNkh+U++4F/NfQ6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY3tLqh1Q2tbmh1Q6sbWt3Q6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDq9sDtKWLVfSlxd9j2TzFqo29tge8f89plsao/pWXsdcWeX+Dtn5dxug9M6FNX4oYvaZGtDH2ivbe0N65R7T/ENp7+25tf5kZIOlpS5e//F4nXpScttxt0rrOVo1vezVt2dbVoq9KGw9LTVu87bE9d+F5gZq2zRbHsvXcJaYtm1Fbe16hps1/kjbZjlqfy7bWtdePFsv6eJTaFPPtTWtdk65nD7/vuVW1EzsD9dgqW1+NsEyWWZalb61PZVjr9sff+XSLbdO0/itlu9p+ssfz6uwLWoZEZrVuPLN6vruhrGrPWO90x6bHKqPaS2zP9d7wDJt11eRoZVM7xQan67r+huiSa1J7jQ1Mt8cO90IXXIvaOXbgzqa7x065BrU+rGe6RXe6hjxz7Wn92BnXnbA9d3XimtOGsFfc4oy9mK41rWvqAHbCdd1ks9N0jWnDk51wi+7qPTlybWlvTfaC6z5mmx24prS3JztyZ5MduZa0Lr892QO38Ez2xDWkdfnfJnvg+rF7rh1t8YnJDtVV6JlqlVjRPn1qsrerNhsb2vojOLKvcBc2fkEU/nx+LSPaOFi0964t8v7QokVrU5tmcbLw++Rkl8dqG3tpj/gXRRmr6CvjPyO6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY3tLqh1Q2tbmh1Q6sbWt3Q6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY39wcAlyz4wLPLJwAAAABJRU5ErkJggg==" >
+      </div>
+
+      <div class="small-img">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO0AAADVCAMAAACMuod9AAAAVFBMVEXu7u5mZmbz8/NZWVlcXFy8vLzU1NSXl5eioqKysrL19fV/f3/x8fFjY2NeXl7Nzc3j4+NqamrKysqMjIx3d3eGhobp6ene3t5TU1Nubm6wsLCPj49E04CSAAACxUlEQVR4nO3b63KiQBRFYWwIJoSbYnQyef/3HPCCIt1OMraTOjtr/VSk+vMolypNkh+U++4F/NfQ6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY3tLqh1Q2tbmh1Q6sbWt3Q6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDq9sDtKWLVfSlxd9j2TzFqo29tge8f89plsao/pWXsdcWeX+Dtn5dxug9M6FNX4oYvaZGtDH2ivbe0N65R7T/ENp7+25tf5kZIOlpS5e//F4nXpScttxt0rrOVo1vezVt2dbVoq9KGw9LTVu87bE9d+F5gZq2zRbHsvXcJaYtm1Fbe16hps1/kjbZjlqfy7bWtdePFsv6eJTaFPPtTWtdk65nD7/vuVW1EzsD9dgqW1+NsEyWWZalb61PZVjr9sff+XSLbdO0/itlu9p+ssfz6uwLWoZEZrVuPLN6vruhrGrPWO90x6bHKqPaS2zP9d7wDJt11eRoZVM7xQan67r+huiSa1J7jQ1Mt8cO90IXXIvaOXbgzqa7x065BrU+rGe6RXe6hjxz7Wn92BnXnbA9d3XimtOGsFfc4oy9mK41rWvqAHbCdd1ks9N0jWnDk51wi+7qPTlybWlvTfaC6z5mmx24prS3JztyZ5MduZa0Lr892QO38Ez2xDWkdfnfJnvg+rF7rh1t8YnJDtVV6JlqlVjRPn1qsrerNhsb2vojOLKvcBc2fkEU/nx+LSPaOFi0964t8v7QokVrU5tmcbLw++Rkl8dqG3tpj/gXRRmr6CvjPyO6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY3tLqh1Q2tbmh1Q6sbWt3Q6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY39wcAlyz4wLPLJwAAAABJRU5ErkJggg==" >
+      </div>
+
+      <div class="small-img">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO0AAADVCAMAAACMuod9AAAAVFBMVEXu7u5mZmbz8/NZWVlcXFy8vLzU1NSXl5eioqKysrL19fV/f3/x8fFjY2NeXl7Nzc3j4+NqamrKysqMjIx3d3eGhobp6ene3t5TU1Nubm6wsLCPj49E04CSAAACxUlEQVR4nO3b63KiQBRFYWwIJoSbYnQyef/3HPCCIt1OMraTOjtr/VSk+vMolypNkh+U++4F/NfQ6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY3tLqh1Q2tbmh1Q6sbWt3Q6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDq9sDtKWLVfSlxd9j2TzFqo29tge8f89plsao/pWXsdcWeX+Dtn5dxug9M6FNX4oYvaZGtDH2ivbe0N65R7T/ENp7+25tf5kZIOlpS5e//F4nXpScttxt0rrOVo1vezVt2dbVoq9KGw9LTVu87bE9d+F5gZq2zRbHsvXcJaYtm1Fbe16hps1/kjbZjlqfy7bWtdePFsv6eJTaFPPtTWtdk65nD7/vuVW1EzsD9dgqW1+NsEyWWZalb61PZVjr9sff+XSLbdO0/itlu9p+ssfz6uwLWoZEZrVuPLN6vruhrGrPWO90x6bHKqPaS2zP9d7wDJt11eRoZVM7xQan67r+huiSa1J7jQ1Mt8cO90IXXIvaOXbgzqa7x065BrU+rGe6RXe6hjxz7Wn92BnXnbA9d3XimtOGsFfc4oy9mK41rWvqAHbCdd1ks9N0jWnDk51wi+7qPTlybWlvTfaC6z5mmx24prS3JztyZ5MduZa0Lr892QO38Ez2xDWkdfnfJnvg+rF7rh1t8YnJDtVV6JlqlVjRPn1qsrerNhsb2vojOLKvcBc2fkEU/nx+LSPaOFi0964t8v7QokVrU5tmcbLw++Rkl8dqG3tpj/gXRRmr6CvjPyO6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY3tLqh1Q2tbmh1Q6sbWt3Q6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY39wcAlyz4wLPLJwAAAABJRU5ErkJggg==" >
+      </div>
+        <!-- <img src="5.jpeg" >
+        <img src="4.jpeg" >
+        <img src="3.jpeg" > -->
+      </div>
+
+      <div class="img-container">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO0AAADVCAMAAACMuod9AAAAVFBMVEXu7u5mZmbz8/NZWVlcXFy8vLzU1NSXl5eioqKysrL19fV/f3/x8fFjY2NeXl7Nzc3j4+NqamrKysqMjIx3d3eGhobp6ene3t5TU1Nubm6wsLCPj49E04CSAAACxUlEQVR4nO3b63KiQBRFYWwIJoSbYnQyef/3HPCCIt1OMraTOjtr/VSk+vMolypNkh+U++4F/NfQ6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY3tLqh1Q2tbmh1Q6sbWt3Q6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDq9sDtKWLVfSlxd9j2TzFqo29tge8f89plsao/pWXsdcWeX+Dtn5dxug9M6FNX4oYvaZGtDH2ivbe0N65R7T/ENp7+25tf5kZIOlpS5e//F4nXpScttxt0rrOVo1vezVt2dbVoq9KGw9LTVu87bE9d+F5gZq2zRbHsvXcJaYtm1Fbe16hps1/kjbZjlqfy7bWtdePFsv6eJTaFPPtTWtdk65nD7/vuVW1EzsD9dgqW1+NsEyWWZalb61PZVjr9sff+XSLbdO0/itlu9p+ssfz6uwLWoZEZrVuPLN6vruhrGrPWO90x6bHKqPaS2zP9d7wDJt11eRoZVM7xQan67r+huiSa1J7jQ1Mt8cO90IXXIvaOXbgzqa7x065BrU+rGe6RXe6hjxz7Wn92BnXnbA9d3XimtOGsFfc4oy9mK41rWvqAHbCdd1ks9N0jWnDk51wi+7qPTlybWlvTfaC6z5mmx24prS3JztyZ5MduZa0Lr892QO38Ez2xDWkdfnfJnvg+rF7rh1t8YnJDtVV6JlqlVjRPn1qsrerNhsb2vojOLKvcBc2fkEU/nx+LSPaOFi0964t8v7QokVrU5tmcbLw++Rkl8dqG3tpj/gXRRmr6CvjPyO6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY3tLqh1Q2tbmh1Q6sbWt3Q6oZWN7S6odUNrW5odUOrG1rd0OqGVje0uqHVDa1uaHVDqxta3dDqhlY39wcAlyz4wLPLJwAAAABJRU5ErkJggg==" id="main-img" >
+
+      </div>
+    </div>
+
+    <div class="product-ditail">
+      <div class="p-deta">
+      <p class="prd-hed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, dicta ipsa provident ipsam rem quibusdam!</p>
+      <h2>₹50 <span class="del-txt"><del>₹150</del></span></h2>
+      <h5>Size</h5>
+      <select name="size" id="">
+        <option value="m">M</option>
+        <option value="L">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select>
+      <h4>Available offers</h4>
+      <p class="offers"><i class="fa-solid fa-tag"></i>Bank Offer10% off on Bank of Baroda Credit Card EMI Txns, up to ₹2,000 on orders of ₹10,000 and above</p>
+      <p class="offers"><i class="fa-solid fa-tag"></i>Bank Offer10% instant discount on ICICI Bank Credit Cards, up to ₹300, on orders of ₹2,500 and above</p>
+      <p class="offers"><i class="fa-solid fa-tag"></i>Combo OfferBuy 2 or more items save 10%</p>
+      <p class="offers"><i class="fa-solid fa-tag"></i>Bank Offer10% off on IDFC FIRST Bank Credit Card EMI Transactions, up to ₹1,750 on orders of ₹10,000 and above</p>
+      <p class="offers"><i class="fa-solid fa-tag"></i>Get GST invoice and save up to 28% on business purchases.</p>
+      <p class="offers"><i class="fa-solid fa-tag"></i>Additional INR 250 Discount on Citibank Credit Card 9 month and above EMI Trxn. Min purchase value INR 15000</p>
+
+      <div class="product-btn">
+        <button class="CartBtn">
+          <span class="IconContainer"> 
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+          </span>
+          <p class="text" onclick="addItemToCart('t-shirt', 899)">Add to Cart</p>
+        </button>
+
+        <button class="CartBtn2">
+          <span class="IconContainer"> 
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg> -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v32H576V96c0-35.3-28.7-64-64-64H64zM576 224H0V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V224zM112 352h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H240c-8.8 0-16-7.2-16-16z"/></svg>
+          </span>
+          <p class="text">By now</p>
+        </button>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="intsterd-product">
+    <div class="line"></div>
+    <div class="product-text">
+      <h1>You might be interested in</h1>
+    </div>
+    <div class="line"></div>
+    <div class="p-margin">
+        <!-- Card content goes here -->
+      <div id="product-container" class="product-card"></div>
+    </div>
+ 
+    <section class="footer-section">
+      <footer class="footer">
+        <div class="socalmedia-icon">
+          <a href="#"><i class="fa-brands fa-square-facebook fa-2x" style="color: #000000;"></i></a>
+            <a href="#"> <i class="fa-brands fa-twitter fa-2x" style="color: #000000;"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-2x" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube  fa-2x" style="color: #000000;"></i></a>
+                  <a href="#"><i class="fa-brands fa-pinterest fa-2x" style="color: #000000;"></i></a>
+        </div>
+        <div class="footer-text">
+          <p>V-Unik, an avant-garde online fashion haven, arises from a commitment to celebrating uniqueness. Rooted in innovation and inclusivity, we aim to redefine your online shopping experience, encouraging you to confidently express your distinctive style. As we forge ahead, V-Unik aspires to be the ultimate destination for fashion enthusiasts, uniting a vibrant community driven by individuality. Join us on this exciting journey where trends converge with personal expression, and each fashion choice becomes a narrative. Explore, connect, and revel in your style odyssey with V-Unik.</p>
+          <h3>India</h3>
+        </div>
+    </footer>
+    </section>
+</section>
+
+    <script>
+        let mainImg = document.getElementById("main-img");
+let smallImgs = document.querySelectorAll(".small-img img");
+
+smallImgs.forEach((smallImg, index) => {
+  smallImg.onclick = function () {
+    mainImg.src = smallImg.src;
+  };
+});
+
+
+    </script>
+
+  <script src="script.js"></script>
+  </body>
+  </html>

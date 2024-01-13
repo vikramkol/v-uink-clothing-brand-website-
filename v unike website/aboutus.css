@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+  
+  
+}
+body{
+  min-height: 100vh;
+}
+
+html, body{
+  /* height: 100%; */
+  width: 100%;
+  box-sizing: border-box;
+  background-color:#ffffff;
+  position: relative;
+  margin: 0; 
+}
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ECF0F1 ;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  
+}
+
+.navbar-list {
+  display: flex;
+  gap: 1.7rem;
+  list-style: none;
+}
+
+.nav-links {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #080708;
+  transition: 0.2s ease-in-out;
+}
+
+.active {
+  color: #F7934C;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #080708;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.icon {
+  display: flex;
+  list-style: none;
+  gap: 1.7rem;
+}
+
+.header a:hover {
+  color: #F7934C;
+}
+
+.menu-btn{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-list{
+      display: none;
+  }
+
+  .menu-btn{
+      display: block;
+  }
+
+  .navbar-list.show {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 30%;
+      height: 35vh;
+      gap: 1rem;
+      left: 0;
+      border-bottom-right-radius: 15px;
+      position: absolute;
+      background-color: #F7F9F9 ;
+      margin-top: 40px;
+  }
+  .navbar-list li{
+      margin-top: 25px;
+      margin-right: 15px;
+  }
+} 
+.main-section{
+  height: 100%;
+  width: 100%;
+  padding-top: 5rem;
+  
+  
+}
+
+.about-hd{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+ 
+  
+}
+.about-main-heading{
+  padding-top: .5rem;
+}
+.b1{
+  height: 45%;
+  margin: 0px 17px;
+  overflow: hidden;
+ 
+  /* margin-left: 16px; */
+}
+
+.b1-hd{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.b1-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.b1 img{
+  height: 300px;
+  margin-left: 2rem;
+  margin-top: 5px;
+}
+ 
+.b1-cont p{
+  width: 70%;
+  text-align: justify;
+}
+
+.t1{
+  margin-top: 10px;
+}
+
+.t1 img{
+  margin-right: 2rem;
+  margin-top: 5px;
+}
+
+.t2{
+  margin-top: 10px;
+  
+}
+
+.t2 img{
+  margin-right: 2rem;
+  margin-top: 5px;
+}
+@media (max-width: 768px) {
+  .main-section{
+      padding-top: rem;
+  }
+
+  .about-main-heading{
+      font-size: 1.1rem;
+      margin-top: 1px;
+  }
+
+
+  .b1-hd{
+      padding-top: 10px;
+  }
+
+  .b1-rs{
+    display: none;
+  }
+
+  .t2{
+   
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+  .b1 img{
+      height: 200px;
+      margin-left: 1rem;
+      margin-top: 5px;
+      /* display: none; */
+  }
+
+  .b1-cont p{
+      width: 90%;
+  }
+}
+
+.footer {
+  height: 250px;
+  width: 100%;
+  background-color: #ECF0F1  ;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.socalmedia-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 10px;
+}
+
+.footer-text{
+  text-align: center;
+  text-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text h3{
+  margin-top: 8px;
+}
+  
+  /* footer midea qury */
+  
+  
+  @media screen and (max-width: 768px) {
+  
+    .footer{
+      height: 100%;
+      /* background-color: #66fcf1; */
+    }
+  
+    .socalmedia-icon a{
+      height: 5px;
+      margin-bottom: 15px;
+    }
+  
+    .footer-text{
+      text-wrap: wrap;
+      margin-top: 10px;
+      margin-left: 8px;
+      margin-right: 8px;
+      margin-bottom: 10px;
+    }
+  }
+
+  /* scroll bar style */
+
+  
+::-webkit-scrollbar {
+  width: 6px;
+  height: 3px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background:  #F7934C;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:  #F7934C;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #0000;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #0d0d0d;
+}
+::-webkit-scrollbar-track:active {
+  background: #1c1c1c;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

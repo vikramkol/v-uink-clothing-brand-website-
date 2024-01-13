@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="V Unik Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v unik cart section</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">V unik</div>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a class="nav-links " href="home.html">Home</a></li>
+            <li><a class="nav-links" href="shope.html">Shope</a></li>
+            <li><a class="nav-links" href="aboutus.html">About</a></li>
+            <li><a class="nav-links" href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="icon">
+        <a class="nav-links" href="login.html"><i class="fa-solid fa-user"></i></a>
+        <a class="nav-links active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a class="menu-btn nav-links" href="#"><i class="fa-solid fa-bars menu-btn"></i></a>
+    </div>
+</header>
+      <section class="main-section">
+         <section id="cart" class="section-p1">
+          <table width="100%" id="cartTable">
+            <thead>
+              <tr>
+                <td>remove</td>
+                <td>image</td>
+                <td>product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><i class="fa-solid fa-xmark" onclick="removeItem(0)"></i></td>
+                <td><img src="2.jpeg" alt="" srcset=""></td>
+                <td> t- shirt</td>
+                <td>₹669</td>
+                <td><input type="number" value="1" onchange="updateSubtotal(0, this.value)"></td>
+                <td id="subtotal0">₹669</td>
+              </tr>
+        
+              <tr>
+                <td><i class="fa-solid fa-xmark" onclick="removeItem(1)"></i></td>
+                <td><img src="5.jpeg" alt="" srcset=""></td>
+                <td> t- shirt</td>
+                <td>₹899</td>
+                <td><input type="number" value="1" onchange="updateSubtotal(1, this.value)"></td>
+                <td id="subtotal1">₹899</td>
+              </tr>
+        
+              <tr>
+                <td><i class="fa-solid fa-xmark" onclick="removeItem(2)"></i></td>
+                <td><img src="4.jpeg" alt="" srcset=""></td>
+                <td> t- shirt</td>
+                <td>₹949</td>
+                <td><input type="number" value="1" onchange="updateSubtotal(2, this.value)"></td>
+                <td id="subtotal2">₹949</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        
+        <section id="cart-add" class="section-p1">
+          <div id="coupon">
+            <h3>Apply coupon</h3>
+            <div>
+              <input type="text" id="couponInput" placeholder="Enter your coupon">
+              <button class="normal" onclick="applyCoupon()">Apply</button>
+            </div>
+          </div>
+        
+          <div id="sub-total">
+            <h3>Cart Total</h3>
+            <table>
+              <tr>
+                <td>Cart subtotal</td>
+                <td id="cartSubtotal">₹2817</td>
+              </tr>
+              <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <td><strong>Total</strong></td>
+                <td id="cartTotal"><strong>₹2817</strong></td>
+              </tr>
+            </table>
+            <button class="no">proceed to checkout</button>
+          </div>
+        </section>
+
+
+        <section class="footer-section">
+          <footer class="footer">
+            <div class="socalmedia-icon">
+              <a href="#"><i class="fa-brands fa-square-facebook fa-2x" style="color: #000000;"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter fa-2x" style="color: #000000;"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-2x" style="color: #000000;"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube  fa-2x" style="color: #000000;"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest fa-2x" style="color: #000000;"></i></a>
+            </div>
+            <div class="footer-text">
+              <p>V-Unik, an avant-garde online fashion haven, arises from a commitment to celebrating uniqueness. Rooted in innovation and inclusivity, we aim to redefine your online shopping experience, encouraging you to confidently express your distinctive style. As we forge ahead, V-Unik aspires to be the ultimate destination for fashion enthusiasts, uniting a vibrant community driven by individuality. Join us on this exciting journey where trends converge with personal expression, and each fashion choice becomes a narrative. Explore, connect, and revel in your style odyssey with V-Unik.</p>
+              <h3>India</h3>
+            </div>
+          </footer>
+        </section>
+        </section>
+        
+        
+        <script>
+    
+let products = [
+ { name: 't-shirt', price: 1199, image: 'https://www.snitch.co.in/cdn/shop/files/4MST2212-06-M31.jpg?v=1703588347&width=1080' },
+ { name: 't-shirt', price: 899, image: 'https://rukminim2.flixcart.com/image/612/612/k8ait8w0/trouser/w/6/p/xxl-v120c6-10368-varanga-original-imafqcbnanhzxhfk.jpeg?q=70' },
+ { name: 't-shirt', price: 949, image: 'https://i.pinimg.com/564x/ef/23/83/ef23838bf2e41a4bcffc3b1474bec4b2.jpg' },
+ { name: 't-shirt', price: 949, image: 'https://i.pinimg.com/564x/22/3f/5b/223f5b38334fbc56ccd3667751d697f5.jpg' },
+];
+
+let subtotalElements = [];
+
+// Coupon data
+let validCoupon = 'DISCOUNT20'; // Change this to your valid coupon code
+let appliedCoupon = false;
+
+// Update the subtotal when the quantity changes
+function updateSubtotal(index, quantity) {
+ let product = products[index];
+ let subtotal = product.price * quantity;
+ subtotalElements[index].textContent = `₹${subtotal}`;
+ updateCartTotal();
+}
+
+// Remove an item from the cart
+function removeItem(index) {
+ products.splice(index, 1);
+ updateCartTable();
+}
+
+// Update the cart total and display it
+function updateCartTotal() {
+ let total = 0;
+ products.forEach((product, index) => {
+    let quantity = parseInt(document.getElementById(`cartTable`).rows[index + 1].cells[4].querySelector('input').value);
+    total += product.price * quantity;
+ });
+
+ // Apply coupon if it's valid and not already applied
+ if (appliedCoupon === false && isValidCoupon()) {
+    total *= 0.8; // Applying a 20% discount for the sake of example
+    appliedCoupon = true;
+ }
+
+ document.getElementById('cartSubtotal').textContent = `₹${total}`;
+ document.getElementById('cartTotal').textContent = `₹${total}`;
+}
+
+// Check if the entered coupon is valid
+function isValidCoupon() {
+ let couponInput = document.getElementById('couponInput').value;
+ return couponInput === validCoupon;
+}
+
+// Apply coupon
+function applyCoupon() {
+ if (isValidCoupon()) {
+    appliedCoupon = true;
+    updateCartTotal();
+    alert('Coupon applied successfully!');
+ } else {
+    alert('Invalid coupon code.');
+ }
+}
+
+// Update the cart table based on the current product list
+function updateCartTable() {
+ let cartTable = document.getElementById('cartTable');
+ let cartRows = cartTable.getElementsByTagName('tr');
+
+ // Remove all rows except the header
+ for (let i = cartRows.length - 1; i > 0; i--) {
+    cartTable.deleteRow(i);
+ }
+
+ products.forEach((product, index) => {
+    let row = cartTable.insertRow();
+    row.insertCell().innerHTML = `<i class="fa-solid fa-xmark" onclick="removeItem(${index})"></i>`;
+    row.insertCell().innerHTML = `<img src="${product.image}" alt="" srcset="">`;
+    row.insertCell().textContent = product.name;
+    row.insertCell().textContent = `₹${product.price}`;
+    let quantityCell = row.insertCell();
+    let quantityInput = document.createElement('input');
+    quantityInput.type = 'number';
+    quantityInput.value = 1;
+    quantityInput.addEventListener('input', () => updateSubtotal(index, quantityInput.value));
+    quantityCell.appendChild(quantityInput);
+
+    let subtotalCell = row.insertCell();
+    subtotalCell.id = `subtotal${index}`;
+    subtotalCell.textContent = `₹${product.price}`;
+    subtotalElements.push(subtotalCell);
+ });
+
+ updateCartTotal();
+}
+
+// Initialize the cart table
+updateCartTable();
+
+
+// nav bar responsive code 
+
+const menuBtn = document.querySelector('.menu-btn');
+const navbarList = document.querySelector('.navbar-list');
+
+menuBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    navbarList.classList.toggle('show');
+});
+
+        </script>
+    
+
+</body>
+</html>

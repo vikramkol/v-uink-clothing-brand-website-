@@ -1,0 +1,186 @@
+.main-section{
+  background-color: rgba(79, 196, 196, 0);
+  height: 100%;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.shop-banner{
+  /* background-color: #f71414; */
+  height: 250px;
+  width: 100%;
+  background-image: url(Vunik\ Sales\ Banner\ \ Desktop\ V2.png);
+  /* background-size: cover; */
+  background-color: #d78b00;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* width: 100%; */
+}
+
+@media screen and (max-width: 768px) {
+  .shop-banner{
+    background-image: url(V\ unik\ banner\ mobile\ v2.png);
+    background-position:center;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+  }
+
+
+  /* .dropdown-content{ */
+  
+}
+
+
+
+
+
+/* secand nav bar style */
+
+/* drop down manu style */
+
+.dropdown {
+  /* position: relative; */
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* display: flex; */
+  flex-direction: column;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  /* font-size: 10px; */
+  width: 130px;
+  padding: 10px;
+ 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.secand-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+.secand-navbar li {
+  float: left;
+}
+
+.secand-navbar {
+  position: relative;
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.secand-navbar a:hover {
+  /* background-color: #ddd; */
+  color: black;
+}
+  .secand-navbar-section{
+    background-color: #ffffff;
+    height: 40px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .secand-navbar,ul,a{
+    display: flex;
+    list-style: none;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 6rem;
+    color: #000000;
+    text-decoration: none;
+    /* font-size: 18px; */
+    /* font-weight: 600; */
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+  }
+  
+  /* .heading-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  .heading-text h2{
+    font-weight: 700;
+    font-size: 1.6rem;
+    
+  } */
+  
+  .secand-navbar-section a:hover{
+    color: #F7934C;
+  }
+   
+  /* card style */
+
+  #product-container-shop {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .shope-card{
+    margin-top: 15px;
+  }
+  
+  #product-container-woman{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  #product-container-kids{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #product-container-top-wear{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #product-container-bottom-wear{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #product-container-footwear{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
